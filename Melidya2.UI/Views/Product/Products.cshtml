@@ -1,0 +1,21 @@
+﻿@using Melidya2.Entity
+@model List<Products>
+
+@{
+    ViewBag.Title = "Products";
+}
+<div class="container">
+    <div class="row">
+        @foreach (Products item in Model)
+        {
+            <div class="card col-md-4" style="width: 15rem;">
+                <img src="~/Image/narli-parmak-fitil-180-15-B.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">@item.ProductName</h5>
+                    <p class="card-text">@item.UnitPrice</p>
+                    <a href="/Product/AddSepet/@item.ProductID" class="btn btn-primary">Sepete Ekle</a>
+                </div>
+            </div>
+        }
+    </div>
+</div>

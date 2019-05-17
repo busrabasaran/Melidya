@@ -1,0 +1,28 @@
+﻿@using Melidya2.Entity
+@model List<Orders>
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">contact name</th>
+            <th scope="col">order date</th>
+            <th scope="col">işlemler</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Orders item in Model)
+        {
+            <tr>
+                <th scope="row">@item.OrderID</th>
+                <td>@item.Customers.ContactName</td>
+                <td>@item.OrderDate</td>
+                <td><a href="/Order/OrderDetail/@item.OrderID" class="btn btn-success">Detay</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

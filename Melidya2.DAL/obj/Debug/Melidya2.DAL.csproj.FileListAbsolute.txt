@@ -1,0 +1,15 @@
+C:\Users\busra\source\repos\Melidya2\Melidya2.DAL\bin\Debug\Melidya2.DAL.dll.config
+C:\Users\busra\source\repos\Melidya2\Melidya2.DAL\bin\Debug\Melidya2.DAL.dll
+C:\Users\busra\source\repos\Melidya2\Melidya2.DAL\bin\Debug\Melidya2.DAL.pdb
+C:\Users\busra\source\repos\Melidya2\Melidya2.DAL\bin\Debug\EntityFramework.dll
+C:\Users\busra\source\repos\Melidya2\Melidya2.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\busra\source\repos\Melidya2\Melidya2.DAL\bin\Debug\Melidya2.Entity.dll
+C:\Users\busra\source\repos\Melidya2\Melidya2.DAL\bin\Debug\Melidya2.Entity.pdb
+C:\Users\busra\source\repos\Melidya2\Melidya2.DAL\bin\Debug\Melidya2.Entity.dll.config
+C:\Users\busra\source\repos\Melidya2\Melidya2.DAL\bin\Debug\EntityFramework.xml
+C:\Users\busra\source\repos\Melidya2\Melidya2.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\busra\source\repos\Melidya2\Melidya2.DAL\obj\Debug\Melidya2.DAL.csprojAssemblyReference.cache
+C:\Users\busra\source\repos\Melidya2\Melidya2.DAL\obj\Debug\Melidya2.DAL.csproj.CoreCompileInputs.cache
+C:\Users\busra\source\repos\Melidya2\Melidya2.DAL\obj\Debug\Melidya2.DAL.csproj.CopyComplete
+C:\Users\busra\source\repos\Melidya2\Melidya2.DAL\obj\Debug\Melidya2.DAL.dll
+C:\Users\busra\source\repos\Melidya2\Melidya2.DAL\obj\Debug\Melidya2.DAL.pdb

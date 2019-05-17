@@ -1,0 +1,16 @@
+﻿@using Melidya2.Entity
+@model Customers
+
+@{
+    ViewBag.Title = "Login";
+}
+
+@using (Html.BeginForm("Login", "Home", FormMethod.Post))
+{
+    <br />
+    <br />
+    @Html.TextBoxFor(x => x.CustomerID, new { @class = "form-control", placeholder = "Kullanıcı Adı" })
+    @Html.TextBoxFor(x => x.Password, new { @class = "form-control", @type = "password", placeholder = "Şifre" })
+    <br />
+    <input type="submit" value="Giriş" class="btn btn-danger">
+}

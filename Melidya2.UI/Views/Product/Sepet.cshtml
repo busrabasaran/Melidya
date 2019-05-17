@@ -1,0 +1,86 @@
+﻿@using Melidya2.UI.Models
+@model  List<SepetModel>
+@{
+    ViewBag.Title = "Sepet";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<div class="container mb-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col"> </th>
+                            <th scope="col">Ürünler</th>
+                            <th scope="col">Stok Durumu</th>
+                            <th scope="col" class="text-center">Adet</th>
+                            <th scope="col" class="text-right">Adet Fiyat</th>
+                            <th> </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (SepetModel item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    <img src="~/Image/narli-parmak-fitil-180-15-B.jpg" width="50" height="50" />
+                                </td>
+                                <td>@item.ProductName</td>
+                                <td>In stock</td>
+                                <td>@item.Quantity</td>
+                                <td class="text-right">@item.Price TL</td>
+                                <td class="text-right"><a href="/Product/DeleteSepet/@item.ProductID" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-trash"></i> </a> </td>
+                            </tr>
+                        }
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Ara Toplam</td>
+                            <td class="text-right">@Session["Subtotal"].ToString() TL</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Kargo</td>
+                            <td class="text-right">6,90 TL</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><strong>Toplam</strong></td>
+                            <td class="text-right"><strong>@Session["Toplam"].ToString() TL</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col mb-2">
+            <div class="row">
+                <div class="col-sm-12  col-md-6">
+                    <a href="/Product/Products/" class="btn btn-block btn-primary">Alışverişe Devam Et</a>
+                </div>
+                <div class="col-sm-12 col-md-6 text-right">
+                    <a href="/Order/AddOrder" class="btn  btn-block btn-success">Siparişi Tamamla</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
